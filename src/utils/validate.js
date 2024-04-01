@@ -9,5 +9,4 @@ if(!isEmail) return "Email ID is Not Valid."
 if(!isPasswordValid) return "Password is Not Valid."
 
 return null;
-
 }
