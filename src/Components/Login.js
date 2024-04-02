@@ -2,6 +2,11 @@ import Header from "./Header";
 import Template from "../assets/Flix-Template.jpg";
 import { useState, useRef } from "react";
 import { checkValidateData } from "../utils/validate";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
+import { auth } from "../utils/firebase";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -17,12 +22,54 @@ const Login = () => {
     //validating from data
     const validationMessage = checkValidateData(
       email.current.value,
-      password.current.value,
+      password.current.value
     );
 
     setErrorMessage(validationMessage);
-  };
 
+    if (validationMessage) return;
+
+    //Sing In / Sign Up Logic
+
+    if (!isSignInForm) {
+      //Logic for Sign Up
+
+      createUserWithEmailAndPassword(
+        auth,
+        email.current.value,
+        password.current.value
+      )
+        .then((userCredential) => {
+          // Signed up
+          const user = userCredential.user;
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+
+          setErrorMessage(errorCode + " - " + errorMessage);
+          // ..
+        });
+    } else {
+      //Logic for Sign In
+      signInWithEmailAndPassword(
+        auth,
+        email.current.value,
+        password.current.value
+      )
+        .then((userCredential) => {
+          // Signed in
+          const user = userCredential.user;
+          // ...
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          setErrorMessage(errorCode + " - " + errorMessage);
+        });
+    }
+  };
 
   return (
     <>
