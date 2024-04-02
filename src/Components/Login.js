@@ -1,4 +1,5 @@
 import Header from "./Header";
+import { useNavigate } from "react-router-dom";
 import Template from "../assets/Flix-Template.jpg";
 import { useState, useRef } from "react";
 import { checkValidateData } from "../utils/validate";
@@ -9,6 +10,8 @@ import {
 import { auth } from "../utils/firebase";
 
 const Login = () => {
+  const navigate = useNavigate();
+
   const [isSignInForm, setIsSignInForm] = useState(true);
   const toggleSignInForm = () => {
     setIsSignInForm(!isSignInForm);
@@ -42,6 +45,7 @@ const Login = () => {
         .then((userCredential) => {
           // Signed up
           const user = userCredential.user;
+          navigate("/browse");
           // ...
         })
         .catch((error) => {
@@ -61,6 +65,7 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
+          navigate("/browse");
           // ...
         })
         .catch((error) => {

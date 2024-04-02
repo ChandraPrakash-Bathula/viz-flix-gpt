@@ -12,6 +12,8 @@
     - Deploying our app to production
     - Create Authentication // SignUp User Account
     - Implement Sign In user API 
+    - Created redux store with userSlice
+
 
 # Features
 
