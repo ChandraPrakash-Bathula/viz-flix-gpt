@@ -13,6 +13,9 @@
     - Create Authentication // SignUp User Account
     - Implement Sign In user API 
     - Created redux store with userSlice
+    - Implemented Sign Out
+    - Updated Profile API card
+    - Fetch Movies from TMDB
 
 
 # Features
