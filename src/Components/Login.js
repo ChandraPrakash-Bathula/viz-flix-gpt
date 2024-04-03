@@ -5,7 +5,7 @@ import { useState, useRef } from "react";
 import { checkValidateData } from "../utils/validate";
 import {
   createUserWithEmailAndPassword,
-  signInWithEmailAndPassword,
+  signInWithEmailAndPassword,updateProfile
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
 
@@ -20,6 +20,7 @@ const Login = () => {
   const [errorMessage, setErrorMessage] = useState(null);
 
   const email = useRef(null);
+  const name = useRef(null);
   const password = useRef(null);
   const handleButtonClick = () => {
     //validating from data
@@ -45,7 +46,21 @@ const Login = () => {
         .then((userCredential) => {
           // Signed up
           const user = userCredential.user;
-          navigate("/browse");
+
+          updateProfile(user, {
+            displayName: name.current.value , photoURL: "https://lh3.googleusercontent.com/ogw/AF2bZyjb_KWnKrurEJakotP-XbPgubBcutWFCSyIgVFdoCA=s64-c-mo"
+          }).then(() => {
+            // Profile updated!
+            // ...
+            navigate("/browse");
+          }).catch((error) => {
+            // An error occurred
+            // ...
+            setErrorMessage(error.message);
+          });
+          
+
+         
           // ...
         })
         .catch((error) => {
@@ -93,6 +108,7 @@ const Login = () => {
           <input
             type="text"
             placeholder="Full Name"
+            ref={name}
             className="bg-gray-500 p-4 my-4 w-full rounded-sm"
           />
         ) : (
