@@ -1,5 +1,4 @@
 import Header from "./Header";
-import { useNavigate } from "react-router-dom";
 import Template from "../assets/Flix-Template.jpg";
 import { useState, useRef } from "react";
 import { checkValidateData } from "../utils/validate";
@@ -12,7 +11,6 @@ import { useDispatch } from "react-redux";
 import {addUser} from "../utils/userSlice"
 
 const Login = () => {
-  const navigate = useNavigate();
   const dispatch = useDispatch()
 
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -65,14 +63,11 @@ const Login = () => {
             photoURL: photoURL,
           })
         );
-            navigate("/browse");
           }).catch((error) => {
             // An error occurred
             // ...
             setErrorMessage(error.message);
           });
-          
-
          
           // ...
         })
@@ -93,7 +88,6 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          navigate("/browse");
           // ...
         })
         .catch((error) => {

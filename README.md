@@ -16,6 +16,7 @@
     - Implemented Sign Out
     - Updated Profile API card
     - Fetch Movies from TMDB
+    - Bug Fix: Sign Up user, diaplayName and profile picture
 
 
 # Features
