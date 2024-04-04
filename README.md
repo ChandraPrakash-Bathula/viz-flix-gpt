@@ -17,6 +17,9 @@
     - Updated Profile API card
     - Fetch Movies from TMDB
     - Bug Fix: Sign Up user, diaplayName and profile picture
+    - Bug Fix: if the user is not logged in redirect /browse to login page and relatively
+    - unsubscribed to the onAuthStateChange call back.
+    - Added hard coded files to the constants.js
 
 
 # Features
