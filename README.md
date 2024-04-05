@@ -39,7 +39,10 @@
     - usePopularMovies Custom hook
     - useTopRatedMovies Custom hook
     - useUpcomingMovies Custom hook
-    - GPT Search Feature
+    - GPT Search Page
+    - GPT Search Bar
+    - Multi-Lingual feature in our APP 
+    - Integrating GPT APIs
 
 
 # Features
