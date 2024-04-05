@@ -31,6 +31,12 @@
     - Custom Hook For Trailer Video
     - Embedded the Youtube Video and make it autoplay and in mute
     - Tailwind CSS to make Main Container match Netflix
+    - Build Secondary Component
+    - Built Movie List
+    - Built Movie Card
+    - TMDB Image CDN
+    - Made the Browse Page Amazing with Tailwind CSS
+    - usePopularMovies Custom hook
 
 
 # Features
