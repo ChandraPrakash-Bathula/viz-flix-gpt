@@ -22,6 +22,15 @@
     - Added hard coded files to the constants.js
     - Register TMDB API and create an app and get access token
     - Get Data from TMDB Now Playing Movies List API
+    - Custom Hook For Now Playing Movie
+    - Create Movie Slice
+    - Update the store with Movie Data
+    - Planning for Main Container and Secondary Container
+    - Fetch Data for Trailer Video
+    - Update store with Trailer Video Data
+    - Custom Hook For Trailer Video
+    - Embedded the Youtube Video and make it autoplay and in mute
+    - Tailwind CSS to make Main Container match Netflix
 
 
 # Features
