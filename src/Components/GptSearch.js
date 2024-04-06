@@ -5,16 +5,18 @@ import Template from "../assets/Flix-Template.jpg"
 
 const GptSearch = () => {
   return (
-    <div>
-       <div className="fixed -z-10">
-    <img src={Template} alt="background" />
+    <>
+      <div className="fixed -z-10">
+    <img className="h-screen object-cover" src={Template} alt="background" />
   </div>
+    <div className="">
+     
       <GptSearchBar />
       <GptMovieSuggestions />
 
       {/* Gpt Search Bar
 Gpt Movie Suggestions */}
-    </div>
+    </div></>
   );
 };
 
