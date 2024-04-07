@@ -14,15 +14,18 @@ Welcome to VIZ FLIX GPT, where cutting-edge technology meets the magic of cinema
 ## Features 🌟
 
 ### Seamless Authentication
+
 - **Sign In / Sign Up Forms:** Securely manage user accounts for a personalized experience.
 - **Redirect to Browse Page:** Seamlessly navigate to the main browsing interface upon authentication.
 
 ### Browsing Experience
+
 - **Header Navigation:** Intuitively explore different sections of the application.
 - **Main Movie Display:** Highlight featured content with trailers and descriptions for an immersive experience.
 - **Movie Suggestions:** AI-driven recommendations based on user preferences for tailored movie choices.
 
 ### Advanced Search Capabilities
+
 - **GPT Search Bar:** Instantly access a wide array of movies with intelligent search functionality.
 - **Multi-Lingual Support:** Cater to diverse user bases with support for multiple languages.
 
@@ -45,6 +48,7 @@ Contributions are welcome! Feel free to submit issues or pull requests for any e
 ## Credits 🙌
 
 This project was made possible with the support of the open-source community and the following technologies:
+
 - React
 - Firebase
 - TMDB API
@@ -60,9 +64,6 @@ This project is licensed under the [MIT License](LICENSE) - feel free to use and
 
 Thank you for choosing VIZ FLIX GPT! We're excited to revolutionize your movie-watching experience with the perfect blend of technology and entertainment. Enjoy the show! 🍿🎥
 
-
-
-
 # VIZ FLIX GPT
 
     - Create React App.
@@ -76,7 +77,7 @@ Thank you for choosing VIZ FLIX GPT! We're excited to revolutionize your movie-w
     - Firebase set up
     - Deploying our app to production
     - Create Authentication // SignUp User Account
-    - Implement Sign In user API 
+    - Implement Sign In user API
     - Created redux store with userSlice
     - Implemented Sign Out
     - Updated Profile API card
@@ -106,7 +107,7 @@ Thank you for choosing VIZ FLIX GPT! We're excited to revolutionize your movie-w
     - useUpcomingMovies Custom hook
     - GPT Search Page
     - GPT Search Bar
-    - Multi-Lingual feature in our APP 
+    - Multi-Lingual feature in our APP
     - Integrating GPT APIs
     - Get Gpt Search Open AI API key
     - GPT search API call
@@ -117,7 +118,6 @@ Thank you for choosing VIZ FLIX GPT! We're excited to revolutionize your movie-w
     - Added .env file
     - And added .env file to gitignore
     - Made application a responsive one
-
 
 # Features
 
@@ -139,4 +139,3 @@ Thank you for choosing VIZ FLIX GPT! We're excited to revolutionize your movie-w
 
     - Search Bar
     - Movie Suggestions
-
