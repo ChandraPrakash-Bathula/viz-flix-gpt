@@ -26,7 +26,7 @@ const GptSearchBar = () => {
   };
 
   const handleGptSearchclick = async () => {
-    console.log(searchText.current.value);
+    //console.log(searchText.current.value);
 
     //Make a call to openAI Gpt API and get movie results
 
@@ -39,7 +39,7 @@ const GptSearchBar = () => {
       messages: [{ role: "user", content: gptQuery }],
       model: "gpt-3.5-turbo",
     });
-    console.log(gptSearchResults.choices[0]?.message?.content);
+    //console.log(gptSearchResults.choices[0]?.message?.content);
 
     if (!gptSearchResults.choices[0]?.message?.content) return "error";
 
