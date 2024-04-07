@@ -1,5 +1,3 @@
-// Import the functions you need from the SDKs you need
-
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
@@ -17,7 +15,7 @@ const firebaseConfig = {
   storageBucket: "vizflixgpt.appspot.com",
   messagingSenderId: "87130074157",
   appId: "1:87130074157:web:b95a90cc4976df67051ca4",
-  measurementId: "G-F3N404EJ65"
+  measurementId: "G-F3N404EJ65",
 };
 
 // Initialize Firebase

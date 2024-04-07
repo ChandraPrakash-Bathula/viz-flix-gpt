@@ -106,7 +106,11 @@ const Login = () => {
     <>
       <Header />
       <div className="absolute">
-        <img className="h-screen object-cover" src={Template} alt="background" />
+        <img
+          className="h-screen object-cover"
+          src={Template}
+          alt="background"
+        />
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
@@ -147,7 +151,10 @@ const Login = () => {
         >
           {isSignInForm ? "Sign In" : "Sign Up"}
         </button>
-        <p className="py-4 cursor-pointer text-sm md:text-lg" onClick={toggleSignInForm}>
+        <p
+          className="py-4 cursor-pointer text-sm md:text-lg"
+          onClick={toggleSignInForm}
+        >
           {isSignInForm
             ? "New to Viz-flix ? Sign Up Now."
             : "Already registered? Sign In Now."}

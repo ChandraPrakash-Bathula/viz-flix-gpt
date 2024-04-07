@@ -11,6 +11,7 @@ const useTrailerVideo = (movie_id) => {
   const trailerVideo = useSelector((store) => store.movies.trailerVideo);
 
   //fetch trailer video and update the store with trailer video data
+  
   const getMovieVideos = async () => {
     const data = await fetch(
       "https://api.themoviedb.org/3/movie/" +
@@ -27,7 +28,7 @@ const useTrailerVideo = (movie_id) => {
   };
 
   useEffect(() => {
-    !trailerVideo &&  getMovieVideos();
+    !trailerVideo && getMovieVideos();
   }, []);
 };
 
