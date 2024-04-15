@@ -1,4 +1,4 @@
-# 🎬 VIZ FLIX GPT - Elevate Your Movie Experience with AI (React JS,Firebase,React-Router-DOM,Redux-Store)
+# 🎬 VIZ FLIX GPT - Elevate Your Movie Experience with AI ( React JS,Firebase,React-Router-DOM,Redux-Store )
 
 Welcome to VIZ FLIX GPT, where cutting-edge technology meets the magic of cinema! This innovative project combines the power of React, Firebase, TMDB API, and OpenAI's GPT for an unparalleled movie browsing and recommendation platform. Whether you're a casual moviegoer or a film aficionado, VIZ FLIX GPT promises to enhance your movie-watching journey with its seamless interface and intelligent suggestions.
 
