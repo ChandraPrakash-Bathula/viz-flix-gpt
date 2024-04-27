@@ -1,4 +1,4 @@
-# 🎬 VIZ FLIX GPT :- Elevate Your Movie Experience with AI   
+# 🎬 VIZ FLIX GPT : Elevate Your Movie Experience with AI   
 
 ## Stack used  [ React JS, Firebase, React-Router-DOM, Redux-Store ]
 
