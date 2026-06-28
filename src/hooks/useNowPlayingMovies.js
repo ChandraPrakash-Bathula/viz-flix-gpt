@@ -21,7 +21,7 @@ const useNowPlayingMovies = () => {
 
  !nowPlayingMovies &&  getNowPlayingMovies();  //if (!nowPlayingMovies)  nowPlayingMovies();
 
-     
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 }
 

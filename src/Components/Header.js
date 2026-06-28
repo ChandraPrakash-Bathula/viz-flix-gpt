@@ -8,7 +8,6 @@ import { useEffect } from "react";
 import { addUser, removeUser } from "../utils/userSlice";
 import { toggleGptSearchView } from "../utils/gptSlice";
 import { SUPPORTED_LANGUAGES } from "../utils/constants";
-import language from "../utils/languageConstants";
 import { changeLanguage } from "../utils/configSlice";
 
 const Header = () => {
@@ -48,6 +47,7 @@ const Header = () => {
     });
 
     return () => unsubscribe(); //unsubscribe when component unmounts.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleGptSearchClick = () => {

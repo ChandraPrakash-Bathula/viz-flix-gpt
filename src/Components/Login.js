@@ -91,7 +91,6 @@ const Login = () => {
       )
         .then((userCredential) => {
           // Signed in
-          const user = userCredential.user;
           // ...
         })
         .catch((error) => {
